@@ -19,7 +19,7 @@ st.set_page_config(
 )
 
 # --- SEGURIDAD Y CONFIGURACIÓN DE API KEY ---
-api_key = st.secrets.get("ANTHROPIC_API_KEY") or os.environ.get("ANTHROPIC_API_KEY")
+api_key = st.secrets.get("KEY") or os.environ.get("KEY")
 
 def init_anthropic_client(key):
     if not key:
